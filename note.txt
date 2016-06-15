@@ -1,0 +1,17 @@
+How Node Applications Work?
+In Node Application, any async function accepts a callback as a last parameter and the callback function accepts error as a first parameter. Let's revisit the previous example again. Create a text file named input.txt having following content
+
+Tutorials Point is giving self learning content
+to teach the world in simple and easy way!!!!!
+Create a js file named main.js having the following code:
+
+var fs = require("fs");
+
+fs.readFile('input.txt', function (err, data) {
+   if (err){
+      console.log(err.stack);
+      return;
+   }
+   console.log(data.toString());
+});
+console.log("Program Ended");

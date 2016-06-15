@@ -1,0 +1,8 @@
+{
+  "name": "nodejs-tutorial-for-me",
+  "description": "my nodejs tutorial",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
